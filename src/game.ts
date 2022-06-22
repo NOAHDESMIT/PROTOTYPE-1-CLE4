@@ -4,7 +4,7 @@ import backgroundImage from "./images/background.png"
 import { SUPERMAN } from "./superman"
 
 class supermanGame {
-
+// loader
     public pixi: PIXI.Application
     public loader: PIXI.Loader
     public background = backgroundImage
@@ -29,7 +29,7 @@ class supermanGame {
         this.background.height = window.innerHeight;
         this.pixi.stage.addChild(this.background)
 
-      
+//       for loop for adding sprite
         for(let i = 0; i < 1; i++){
             let superman = new SUPERMAN(this.loader.resources["supermanTexture"].texture!)
             this.pixi.stage.addChild(superman)
